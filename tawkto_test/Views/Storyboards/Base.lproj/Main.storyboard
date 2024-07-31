@@ -58,6 +58,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fzY-4g-0l3"/>
+                    <connections>
+                        <outlet property="userListTableView" destination="Rag-P1-Iaq" id="jrG-3n-h47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,10 +16,20 @@
 		8FE5CDFE2C593D5A0043613E /* tawkto_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDFD2C593D5A0043613E /* tawkto_testTests.swift */; };
 		8FE5CE082C593D5A0043613E /* tawkto_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE072C593D5A0043613E /* tawkto_testUITests.swift */; };
 		8FE5CE0A2C593D5A0043613E /* tawkto_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE092C593D5A0043613E /* tawkto_testUITestsLaunchTests.swift */; };
-		8FE5CE232C5941DB0043613E /* GitHubUserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE212C5941DB0043613E /* GitHubUserListTableViewCell.swift */; };
-		8FE5CE242C5941DB0043613E /* GitHubUserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE212C5941DB0043613E /* GitHubUserListTableViewCell.swift */; };
-		8FE5CE252C5941DB0043613E /* GitHubUserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5CE222C5941DB0043613E /* GitHubUserListTableViewCell.xib */; };
-		8FE5CE262C5941DB0043613E /* GitHubUserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5CE222C5941DB0043613E /* GitHubUserListTableViewCell.xib */; };
+		8FE5CE362C59EDB40043613E /* GitHubUserAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE352C59EDB40043613E /* GitHubUserAPIModel.swift */; };
+		8FE5CE3A2C5A34610043613E /* GitHubUserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE392C5A34610043613E /* GitHubUserListTableViewCell.swift */; };
+		8FE5CE3C2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE3B2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift */; };
+		8FE5CE3E2C5A35620043613E /* GitHubUserNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE3D2C5A35620043613E /* GitHubUserNoteTableViewCell.swift */; };
+		8FE5CE402C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE3F2C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift */; };
+		8FE5CE422C5A374F0043613E /* ReuseableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE412C5A374F0043613E /* ReuseableCell.swift */; };
+		8FE5CE452C5A37BF0043613E /* UITableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE442C5A37BF0043613E /* UITableView+RegisterCell.swift */; };
+		8FE5CE472C5A3D450043613E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE462C5A3D450043613E /* UserListViewModel.swift */; };
+		8FE5CE492C5A3F260043613E /* GitHubUserCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE482C5A3F260043613E /* GitHubUserCustomModel.swift */; };
+		8FE5CE4B2C5A42480043613E /* GitHubUserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE4A2C5A42480043613E /* GitHubUserCellViewModel.swift */; };
+		8FE5CE4D2C5A46760043613E /* GitHubUserPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE4C2C5A46760043613E /* GitHubUserPresentable.swift */; };
+		8FE5CE4F2C5A7B540043613E /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE4E2C5A7B540043613E /* APIServices.swift */; };
+		8FE5CE512C5A7BC70043613E /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */; };
+		8FE5CE532C5A7D8F0043613E /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +63,20 @@
 		8FE5CE032C593D5A0043613E /* tawkto_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tawkto_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE5CE072C593D5A0043613E /* tawkto_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tawkto_testUITests.swift; sourceTree = "<group>"; };
 		8FE5CE092C593D5A0043613E /* tawkto_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tawkto_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8FE5CE212C5941DB0043613E /* GitHubUserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserListTableViewCell.swift; sourceTree = "<group>"; };
-		8FE5CE222C5941DB0043613E /* GitHubUserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitHubUserListTableViewCell.xib; sourceTree = "<group>"; };
+		8FE5CE352C59EDB40043613E /* GitHubUserAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserAPIModel.swift; sourceTree = "<group>"; };
+		8FE5CE392C5A34610043613E /* GitHubUserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserListTableViewCell.swift; sourceTree = "<group>"; };
+		8FE5CE3B2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserInvertedTableViewCell.swift; sourceTree = "<group>"; };
+		8FE5CE3D2C5A35620043613E /* GitHubUserNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserNoteTableViewCell.swift; sourceTree = "<group>"; };
+		8FE5CE3F2C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserNoteInvertedTableViewCell.swift; sourceTree = "<group>"; };
+		8FE5CE412C5A374F0043613E /* ReuseableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableCell.swift; sourceTree = "<group>"; };
+		8FE5CE442C5A37BF0043613E /* UITableView+RegisterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCell.swift"; sourceTree = "<group>"; };
+		8FE5CE462C5A3D450043613E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		8FE5CE482C5A3F260043613E /* GitHubUserCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserCustomModel.swift; sourceTree = "<group>"; };
+		8FE5CE4A2C5A42480043613E /* GitHubUserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserCellViewModel.swift; sourceTree = "<group>"; };
+		8FE5CE4C2C5A46760043613E /* GitHubUserPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserPresentable.swift; sourceTree = "<group>"; };
+		8FE5CE4E2C5A7B540043613E /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +127,7 @@
 		8FE5CDE52C593D580043613E /* tawkto_test */ = {
 			isa = PBXGroup;
 			children = (
+				8FE5CE432C5A37AA0043613E /* Extensions */,
 				8FE5CE1E2C5940760043613E /* CoreData */,
 				8FE5CE1B2C5940140043613E /* Controllers */,
 				8FE5CE1A2C593FF20043613E /* Services */,
@@ -147,6 +170,9 @@
 		8FE5CE172C593F510043613E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8FE5CE352C59EDB40043613E /* GitHubUserAPIModel.swift */,
+				8FE5CE482C5A3F260043613E /* GitHubUserCustomModel.swift */,
+				8FE5CE4C2C5A46760043613E /* GitHubUserPresentable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,6 +180,8 @@
 		8FE5CE182C593F690043613E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8FE5CE462C5A3D450043613E /* UserListViewModel.swift */,
+				8FE5CE4A2C5A42480043613E /* GitHubUserCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +198,9 @@
 		8FE5CE1A2C593FF20043613E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8FE5CE4E2C5A7B540043613E /* APIServices.swift */,
+				8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */,
+				8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -210,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				8FE5CE202C5941930043613E /* GitHubUserListCells */,
+				8FE5CE412C5A374F0043613E /* ReuseableCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -217,10 +249,20 @@
 		8FE5CE202C5941930043613E /* GitHubUserListCells */ = {
 			isa = PBXGroup;
 			children = (
-				8FE5CE212C5941DB0043613E /* GitHubUserListTableViewCell.swift */,
-				8FE5CE222C5941DB0043613E /* GitHubUserListTableViewCell.xib */,
+				8FE5CE392C5A34610043613E /* GitHubUserListTableViewCell.swift */,
+				8FE5CE3B2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift */,
+				8FE5CE3D2C5A35620043613E /* GitHubUserNoteTableViewCell.swift */,
+				8FE5CE3F2C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift */,
 			);
 			path = GitHubUserListCells;
+			sourceTree = "<group>";
+		};
+		8FE5CE432C5A37AA0043613E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8FE5CE442C5A37BF0043613E /* UITableView+RegisterCell.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +370,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE5CDF32C593D5A0043613E /* LaunchScreen.storyboard in Resources */,
-				8FE5CE252C5941DB0043613E /* GitHubUserListTableViewCell.xib in Resources */,
 				8FE5CDF02C593D5A0043613E /* Assets.xcassets in Resources */,
 				8FE5CDEE2C593D580043613E /* Main.storyboard in Resources */,
 			);
@@ -338,7 +379,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FE5CE262C5941DB0043613E /* GitHubUserListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,10 +396,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE5CE402C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift in Sources */,
+				8FE5CE472C5A3D450043613E /* UserListViewModel.swift in Sources */,
 				8FE5CDEB2C593D580043613E /* GitHubUserListViewController.swift in Sources */,
+				8FE5CE362C59EDB40043613E /* GitHubUserAPIModel.swift in Sources */,
+				8FE5CE492C5A3F260043613E /* GitHubUserCustomModel.swift in Sources */,
+				8FE5CE3A2C5A34610043613E /* GitHubUserListTableViewCell.swift in Sources */,
+				8FE5CE4B2C5A42480043613E /* GitHubUserCellViewModel.swift in Sources */,
+				8FE5CE512C5A7BC70043613E /* APIEndpoint.swift in Sources */,
+				8FE5CE422C5A374F0043613E /* ReuseableCell.swift in Sources */,
 				8FE5CDE72C593D580043613E /* AppDelegate.swift in Sources */,
+				8FE5CE4D2C5A46760043613E /* GitHubUserPresentable.swift in Sources */,
+				8FE5CE532C5A7D8F0043613E /* NetworkServices.swift in Sources */,
+				8FE5CE3C2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift in Sources */,
 				8FE5CDE92C593D580043613E /* SceneDelegate.swift in Sources */,
-				8FE5CE232C5941DB0043613E /* GitHubUserListTableViewCell.swift in Sources */,
+				8FE5CE452C5A37BF0043613E /* UITableView+RegisterCell.swift in Sources */,
+				8FE5CE3E2C5A35620043613E /* GitHubUserNoteTableViewCell.swift in Sources */,
+				8FE5CE4F2C5A7B540043613E /* APIServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE5CDFE2C593D5A0043613E /* tawkto_testTests.swift in Sources */,
-				8FE5CE242C5941DB0043613E /* GitHubUserListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,22 +2,82 @@
 //  GitHubUserListTableViewCell.swift
 //  tawkto_test
 //
-//  Created by Nouraiz Taimour on 30/07/2024.
+//  Created by Nouraiz Taimour on 31/07/2024.
 //
 
+import Foundation
 import UIKit
 
-class GitHubUserListTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
+protocol UserCustomCell {
+    func configure(withDataModel model: GitHubUserCellViewModel)
 }
+
+class GitHubUserListTableViewCell: UITableViewCell, UserCustomCell {
+    
+    // Define the UI elements
+        let userAvatarImageView: UIImageView = {
+            let imageView = UIImageView()
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.contentMode = .scaleAspectFill
+            imageView.clipsToBounds = true
+            return imageView
+        }()
+        
+        let userNameLabel: UILabel = {
+            let label = UILabel()
+            label.translatesAutoresizingMaskIntoConstraints = false
+            label.font = UIFont.boldSystemFont(ofSize: 16)
+            return label
+        }()
+        
+        let profileUrlLabel: UILabel = {
+            let label = UILabel()
+            label.translatesAutoresizingMaskIntoConstraints = false
+            label.font = UIFont.systemFont(ofSize: 14)
+            label.textColor = .gray
+            return label
+        }()
+        
+        override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+            super.init(style: style, reuseIdentifier: reuseIdentifier)
+            
+            // Add the UI elements to the content view
+            contentView.addSubview(userAvatarImageView)
+            contentView.addSubview(userNameLabel)
+            contentView.addSubview(profileUrlLabel)
+            
+            // Add constraints to the UI elements
+            NSLayoutConstraint.activate([
+                // Constraints for customImageView
+                userAvatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+                userAvatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+                userAvatarImageView.widthAnchor.constraint(equalToConstant: 50),
+                userAvatarImageView.heightAnchor.constraint(equalToConstant: 50),
+                
+                // Constraints for titleLabel
+                userNameLabel.leadingAnchor.constraint(equalTo: userAvatarImageView.trailingAnchor, constant: 10),
+                userNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+                userNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+                
+                // Constraints for subtitleLabel
+                profileUrlLabel.leadingAnchor.constraint(equalTo: userAvatarImageView.trailingAnchor, constant: 10),
+                profileUrlLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+                profileUrlLabel.topAnchor.constraint(equalTo: userNameLabel.bottomAnchor, constant: 5),
+                profileUrlLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
+            ])
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+    
+    
+    func configure(withDataModel model: GitHubUserCellViewModel) {
+        
+        
+    }
+}
+
+extension GitHubUserListTableViewCell: ReusableCell {}
+
+
