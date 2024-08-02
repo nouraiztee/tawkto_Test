@@ -30,6 +30,7 @@
 		8FE5CE4F2C5A7B540043613E /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE4E2C5A7B540043613E /* APIServices.swift */; };
 		8FE5CE512C5A7BC70043613E /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */; };
 		8FE5CE532C5A7D8F0043613E /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */; };
+		8FE5CE552C5CC5C50043613E /* UITableView+FooterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8FE5CE4E2C5A7B540043613E /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FooterLoader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				8FE5CE182C593F690043613E /* ViewModels */,
 				8FE5CDEF2C593D5A0043613E /* Assets.xcassets */,
 				8FE5CDF42C593D5A0043613E /* Info.plist */,
+				8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */,
 			);
 			path = tawkto_test;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE5CE402C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift in Sources */,
+				8FE5CE552C5CC5C50043613E /* UITableView+FooterLoader.swift in Sources */,
 				8FE5CE472C5A3D450043613E /* UserListViewModel.swift in Sources */,
 				8FE5CDEB2C593D580043613E /* GitHubUserListViewController.swift in Sources */,
 				8FE5CE362C59EDB40043613E /* GitHubUserAPIModel.swift in Sources */,

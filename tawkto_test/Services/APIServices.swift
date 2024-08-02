@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GitHubUsersAPIServices {
-    
+    func getUsersFromAPI(since: Int, completion: @escaping (Result<[GitHubUserAPIModel], NetworkError>) -> ())
 }
 
 struct GitHubUsersAPIClient: GitHubUsersAPIServices {
@@ -17,6 +17,17 @@ struct GitHubUsersAPIClient: GitHubUsersAPIServices {
     
     init(networkService: NetworkServices = NetworkManager.shared) {
         self.networkService = networkService
+    }
+    
+    func getUsersFromAPI(since: Int, completion: @escaping (Result<[GitHubUserAPIModel], NetworkError>) -> ()) {
+        
+        guard let url = APIEndpoint.endpointURL(for: .getUsersList(since: since)) else {
+            return completion(.failure(.invalidURL))
+        }
+        
+        networkService.callGetAPI(forURL: url, withresponseType: [GitHubUserAPIModel].self) { result in
+            completion(result)
+        }
     }
     
 }

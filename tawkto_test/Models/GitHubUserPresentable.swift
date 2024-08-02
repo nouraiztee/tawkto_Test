@@ -17,7 +17,7 @@ struct GitHubUserPresentable: GitHubUserCellViewModel {
     }
     
     func getUserID() -> Int {
-        user.id
+        user.id ?? 0
     }
     
     func getUsername() -> String {
@@ -25,7 +25,7 @@ struct GitHubUserPresentable: GitHubUserCellViewModel {
     }
     
     func getProfileUrl() -> String {
-        user.url
+        user.url ?? ""
     }
     
     func getAvatarUrl() -> String {
@@ -33,7 +33,7 @@ struct GitHubUserPresentable: GitHubUserCellViewModel {
     }
     
     func hasNote() -> Bool {
-        user.hasNote ? true : false
+        user.note == nil ? false : true
     }
     
     func dequeueCell(tableView: UITableView, indexPath: IndexPath) -> UserCustomCell? {

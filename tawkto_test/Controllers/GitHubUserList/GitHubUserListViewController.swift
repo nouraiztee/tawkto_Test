@@ -11,6 +11,7 @@ class GitHubUserListViewController: UIViewController {
 
     @IBOutlet weak var userListTableView: UITableView!
     
+    var usersViewModel = UserListViewModel(apiService: GitHubUsersAPIClient())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +21,35 @@ class GitHubUserListViewController: UIViewController {
         userListTableView.delegate = self
         
         userListTableView.registerCells([
-            GitHubUserListTableViewCell.self
+            GitHubUserListTableViewCell.self,
+            GitHubUserInvertedTableViewCell.self,
+            GitHubUserNoteTableViewCell.self,
+            GitHubUserNoteInvertedTableViewCell.self
         ])
+        
+        usersViewModel.getUsers()
+        usersViewModel.didFetchUsersList = { [weak self] in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.userListTableView.reloadData()
+            }
+        }
     }
 
 }
 
 extension GitHubUserListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+        usersViewModel.usersList?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: GitHubUserListTableViewCell.cellIdentifier, for: indexPath) as? UserCustomCell
+        let model = usersViewModel.usersList?[indexPath.row]
+        
+        guard let cell = model?.dequeueCell(tableView: tableView, indexPath: indexPath) else {
+            return UITableViewCell()
+        }
+        cell.configure(withDataModel: model)
         
         return cell as! UITableViewCell
     }
@@ -41,6 +58,12 @@ extension GitHubUserListViewController: UITableViewDataSource {
 extension GitHubUserListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         60
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == (usersViewModel.usersList?.count ?? 0) - 1 {
+            usersViewModel.getUsers(sinceID: usersViewModel.usersList?.last?.getUserID() ?? 0)
+        }
     }
 }
 

@@ -11,7 +11,7 @@ import Foundation
 
 enum APIEndpoint {
     
-    static let baseURL = "https://api.github.com/"
+    static let baseURL = "https://api.github.com"
     
     case getUsersList(since: Int)
     case getUserDetail(userName: String)

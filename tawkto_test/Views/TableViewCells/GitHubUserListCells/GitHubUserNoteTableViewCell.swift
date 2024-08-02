@@ -36,7 +36,7 @@ class GitHubUserNoteTableViewCell: GitHubUserListTableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func configure(withDataModel model: GitHubUserCellViewModel) {
+    override func configure(withDataModel model: GitHubUserCellViewModel?) {
         
     }
 }

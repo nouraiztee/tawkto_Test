@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol UserCustomCell {
-    func configure(withDataModel model: GitHubUserCellViewModel)
+    func configure(withDataModel model: GitHubUserCellViewModel?)
 }
 
 class GitHubUserListTableViewCell: UITableViewCell, UserCustomCell {
@@ -72,8 +72,10 @@ class GitHubUserListTableViewCell: UITableViewCell, UserCustomCell {
         }
     
     
-    func configure(withDataModel model: GitHubUserCellViewModel) {
-        
+    func configure(withDataModel model: GitHubUserCellViewModel?) {
+        guard let dataModel = model else { return }
+        userNameLabel.text = dataModel.getUsername()
+        profileUrlLabel.text = dataModel.getProfileUrl()
         
     }
 }

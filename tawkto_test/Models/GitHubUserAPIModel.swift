@@ -40,4 +40,8 @@ struct GitHubUserAPIModel: Codable {
         case type
         case siteAdmin = "site_admin"
     }
+    
+    var gitHubUser: GitHubUserModel {
+        GitHubUserModel(id: id, url: url)
+    }
 }
