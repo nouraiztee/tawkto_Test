@@ -65,6 +65,14 @@ extension GitHubUserListViewController: UITableViewDelegate {
             usersViewModel.getUsers(sinceID: usersViewModel.usersList?.last?.getUserID() ?? 0)
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let userName = usersViewModel.usersList?[indexPath.row].getUsername() else { return }
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GitHubUserDetailsViewController") as! GitHubUserDetailsViewController
+        vc.userName = userName
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 

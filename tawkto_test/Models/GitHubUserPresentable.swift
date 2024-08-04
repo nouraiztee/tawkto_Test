@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct GitHubUserPresentable: GitHubUserCellViewModel {
-    
+   
     private var user: GitHubUserModel
     
     init(userModel: GitHubUserModel) {
@@ -34,6 +34,26 @@ struct GitHubUserPresentable: GitHubUserCellViewModel {
     
     func hasNote() -> Bool {
         user.note == nil ? false : true
+    }
+    
+    func getFollowersCount() -> Int {
+        user.followers ?? 0
+    }
+    
+    func getFollowingCount() -> Int {
+        user.following ?? 0
+    }
+    
+    func getCompany() -> String {
+        user.company ?? ""
+    }
+    
+    func getBlog() -> String {
+        user.blog ?? ""
+    }
+    
+    func getNote() -> String {
+        user.note ?? ""
     }
     
     func dequeueCell(tableView: UITableView, indexPath: IndexPath) -> UserCustomCell? {

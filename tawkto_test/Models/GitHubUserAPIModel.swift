@@ -20,6 +20,9 @@ struct GitHubUserAPIModel: Codable {
     let receivedEventsURL: String?
     let type: String?
     let siteAdmin: Bool?
+    let name, company, blog, location: String?
+    let email, hireable, bio, twitterUsername: String?
+    let publicRepos, publicGists, followers, following: Int?
 
     enum CodingKeys: String, CodingKey {
         case login, id
@@ -39,9 +42,15 @@ struct GitHubUserAPIModel: Codable {
         case receivedEventsURL = "received_events_url"
         case type
         case siteAdmin = "site_admin"
+        case name, company, blog, location, email, hireable, bio
+        case twitterUsername = "twitter_username"
+        case publicRepos = "public_repos"
+        case publicGists = "public_gists"
+        case followers, following
     }
+
     
     var gitHubUser: GitHubUserModel {
-        GitHubUserModel(id: id, url: url)
+        GitHubUserModel(login: login, id: id, avatarURL: avatarURL, name: name, company: company, blog: blog, followers: followers, following: following, url: url)
     }
 }

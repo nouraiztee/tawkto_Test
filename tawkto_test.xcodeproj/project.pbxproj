@@ -31,6 +31,8 @@
 		8FE5CE512C5A7BC70043613E /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */; };
 		8FE5CE532C5A7D8F0043613E /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */; };
 		8FE5CE552C5CC5C50043613E /* UITableView+FooterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */; };
+		8FE5CE5A2C5F88160043613E /* GitHubUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */; };
+		8FE5CE5C2C5F88C80043613E /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE5B2C5F88C80043613E /* UserDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FooterLoader.swift"; sourceTree = "<group>"; };
+		8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserDetailsViewController.swift; sourceTree = "<group>"; };
+		8FE5CE5B2C5F88C80043613E /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				8FE5CE462C5A3D450043613E /* UserListViewModel.swift */,
+				8FE5CE5B2C5F88C80043613E /* UserDetailsViewModel.swift */,
 				8FE5CE4A2C5A42480043613E /* GitHubUserCellViewModel.swift */,
 			);
 			path = ViewModels;
@@ -212,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				8FE5CE1D2C5940440043613E /* GitHubUserList */,
+				8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 				8FE5CDEB2C593D580043613E /* GitHubUserListViewController.swift in Sources */,
 				8FE5CE362C59EDB40043613E /* GitHubUserAPIModel.swift in Sources */,
 				8FE5CE492C5A3F260043613E /* GitHubUserCustomModel.swift in Sources */,
+				8FE5CE5C2C5F88C80043613E /* UserDetailsViewModel.swift in Sources */,
 				8FE5CE3A2C5A34610043613E /* GitHubUserListTableViewCell.swift in Sources */,
 				8FE5CE4B2C5A42480043613E /* GitHubUserCellViewModel.swift in Sources */,
 				8FE5CE512C5A7BC70043613E /* APIEndpoint.swift in Sources */,
@@ -414,6 +421,7 @@
 				8FE5CE532C5A7D8F0043613E /* NetworkServices.swift in Sources */,
 				8FE5CE3C2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift in Sources */,
 				8FE5CDE92C593D580043613E /* SceneDelegate.swift in Sources */,
+				8FE5CE5A2C5F88160043613E /* GitHubUserDetailsViewController.swift in Sources */,
 				8FE5CE452C5A37BF0043613E /* UITableView+RegisterCell.swift in Sources */,
 				8FE5CE3E2C5A35620043613E /* GitHubUserNoteTableViewCell.swift in Sources */,
 				8FE5CE4F2C5A7B540043613E /* APIServices.swift in Sources */,

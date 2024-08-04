@@ -9,6 +9,6 @@ import Foundation
 
 class GitHubUserNoteInvertedTableViewCell: GitHubUserNoteTableViewCell {
     override func configure(withDataModel model: GitHubUserCellViewModel?) {
-        
+        super.configure(withDataModel: model)
     }
 }

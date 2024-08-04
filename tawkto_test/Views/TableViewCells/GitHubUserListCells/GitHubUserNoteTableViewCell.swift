@@ -11,6 +11,7 @@ import UIKit
 class GitHubUserNoteTableViewCell: GitHubUserListTableViewCell {
     let noteImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.image = UIImage(resource: .icNote)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -25,10 +26,12 @@ class GitHubUserNoteTableViewCell: GitHubUserListTableViewCell {
         
         NSLayoutConstraint.activate([
             // Constraints for customImageView
-            noteImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 8),
+            noteImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
             noteImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            noteImageView.widthAnchor.constraint(equalToConstant: 25),
-            noteImageView.heightAnchor.constraint(equalToConstant: 25),
+            noteImageView.widthAnchor.constraint(equalToConstant: 20),
+            noteImageView.heightAnchor.constraint(equalToConstant: 20),
+            
+            //profileUrlLabel.trailingAnchor.constraint(equalTo: noteImageView.leadingAnchor, constant: -8)
         ])
     }
     
@@ -37,6 +40,7 @@ class GitHubUserNoteTableViewCell: GitHubUserListTableViewCell {
     }
     
     override func configure(withDataModel model: GitHubUserCellViewModel?) {
+        super.configure(withDataModel: model)
         
     }
 }

@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C0B6D1A2-7113-4456-A678-12CC0FB1F34B"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tawkto_test/Services/NetworkServices.swift"
@@ -56,7 +56,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "83E4C1CC-2D78-439A-813D-4275FFC21176"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tawkto_test/Services/NetworkServices.swift"
@@ -114,6 +114,148 @@
             endingLineNumber = "24"
             landmarkName = "getUsername()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1C29FAC-EC7E-41D8-B21B-A217BD0F9F26"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tawkto_test/Services/APIServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getUserDetails(forUserName:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E1C29FAC-EC7E-41D8-B21B-A217BD0F9F26 - 7459115bd283ac07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tawkto_test.GitHubUsersAPIClient.getUserDetails(forUserName: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;tawkto_test.GitHubUserAPIModel&gt;, tawkto_test.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Services/APIServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "E1C29FAC-EC7E-41D8-B21B-A217BD0F9F26 - e247e306dcbcb55f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tawkto_test.GitHubUsersAPIClient.getUserDetails(forUserName: Swift.String, completion: (Swift.Result&lt;tawkto_test.GitHubUserAPIModel, tawkto_test.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Services/APIServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "E1C29FAC-EC7E-41D8-B21B-A217BD0F9F26 - e247e306dcbcb55f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tawkto_test.GitHubUsersAPIClient.getUserDetails(forUserName: Swift.String, completion: (Swift.Result&lt;tawkto_test.GitHubUserAPIModel, tawkto_test.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Services/APIServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64A72367-762B-40BE-9850-BB91221EE1F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tawkto_test/Services/APIServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getUserDetails(forUserName:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "64A72367-762B-40BE-9850-BB91221EE1F9 - 80d814d149fa0fe3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;tawkto_test.GitHubUserAPIModel&gt;, tawkto_test.NetworkError&gt;) -&gt; () in tawkto_test.GitHubUsersAPIClient.getUserDetails(forUserName: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;tawkto_test.GitHubUserAPIModel&gt;, tawkto_test.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Services/APIServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "64A72367-762B-40BE-9850-BB91221EE1F9 - f0970498898a2bb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;tawkto_test.GitHubUserAPIModel, tawkto_test.NetworkError&gt;) -&gt; () in tawkto_test.GitHubUsersAPIClient.getUserDetails(forUserName: Swift.String, completion: (Swift.Result&lt;tawkto_test.GitHubUserAPIModel, tawkto_test.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Services/APIServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "64A72367-762B-40BE-9850-BB91221EE1F9 - f0970498898a2bb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;tawkto_test.GitHubUserAPIModel, tawkto_test.NetworkError&gt;) -&gt; () in tawkto_test.GitHubUsersAPIClient.getUserDetails(forUserName: Swift.String, completion: (Swift.Result&lt;tawkto_test.GitHubUserAPIModel, tawkto_test.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Services/APIServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28B86A88-E580-4F67-BD97-AE753A5BAD87"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tawkto_test/ViewModels/UserDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "userDetails"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
