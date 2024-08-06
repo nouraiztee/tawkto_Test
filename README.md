@@ -27,4 +27,7 @@ Assessment for job application for tawk.to
 
 
 ## App Screenshots
-https://imgur.com/gallery/github-users-sUZg8sH
+<p align="center">
+  <img src="https://imgur.com/gallery/github-users-sUZg8sH" width="350">
+  <img src="your_relative_path_here_number_2_large_name">
+</p>
