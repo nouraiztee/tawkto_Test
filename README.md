@@ -30,7 +30,7 @@ Assessment for job application for tawk.to
 
 <table>
   <tr>
-    <td><img src="![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 03](https://github.com/user-attachments/assets/11921822-0853-4f5b-837f-fd21f6c39ed3)" width=350></td>
+    <td><img src=![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 03](https://github.com/user-attachments/assets/11921822-0853-4f5b-837f-fd21f6c39ed3) width=350></td>
     <td><img src="https://i.imgur.com/Qps0efA.png" width=350></td>
     <td><img src="https://i.imgur.com/XPqWXCm.png" width=350></td>
     <td><img src="https://i.imgur.com/lcqgbnW.png" width=350></td>
