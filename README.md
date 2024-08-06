@@ -27,12 +27,4 @@ Assessment for job application for tawk.to
 
 
 ## App Screenshots
-
-[<table>
-  <tr>
-    <td><img src=["https://i.imgur.com/a/sUZg8sH"](https://imgur.com/gallery/github-users-sUZg8sH)></td>
-    <td><img src="https://i.imgur.com/XPqWXCm.png" width=350></td>
-    <td><img src="https://i.imgur.com/lcqgbnW.png" width=350></td>
-    <td><img src="https://i.imgur.com/iXXom5J.png" width=350></td>
-  </tr>
- </table>](https://imgur.com/gallery/github-users-sUZg8sH)
+https://imgur.com/gallery/github-users-sUZg8sH
