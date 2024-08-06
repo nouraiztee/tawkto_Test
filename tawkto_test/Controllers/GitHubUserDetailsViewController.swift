@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CoreData
+
 
 class GitHubUserDetailsViewController: UIViewController {
     
@@ -30,7 +32,11 @@ class GitHubUserDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        userDetailViewModel = UserDetailsViewModel(apiService: GitHubUsersAPIClient(), userName: userName)
+        self.title = userName
+        notesTxtView.layer.borderWidth = 0.5
+        notesTxtView.layer.borderColor = UIColor.gray.cgColor
+        
+        userDetailViewModel = UserDetailsViewModel(apiService: GitHubUsersAPIClient(), userName: userName, localStorageService: CoreDataClient.shared)
         userDetailViewModel.didFetchUserDetails = { [weak self] user in
             guard let self = self else { return }
             DispatchQueue.main.async {
@@ -44,9 +50,22 @@ class GitHubUserDetailsViewController: UIViewController {
     private func setUpUserData(user: GitHubUserPresentable) {
         followersCountLbl.text = "Followers: \(user.getFollowersCount())"
         followingCountLbl.text = "Following: \(user.getFollowersCount())"
-        userNameLbl.text = "\(user.getUsername())"
-        companyLbl.text = "\(user.getCompany())"
-        blogLbl.text = "\(user.getBlog())"
+        userNameLbl.text = "Name: \(user.getUsername())"
+        companyLbl.text = "Company: \(user.getCompany())"
+        blogLbl.text = "Blog: \(user.getBlog())"
+        notesTxtView.text = userDetailViewModel.getUserNote(forUserID: userName)
+        
+        guard let url = URL(string: user.getAvatarUrl()) else { return }
+        ImageLoader.shared.loadData(url: url) { data, error in
+            if let imageData = data {
+                self.userAvatarImage.image = UIImage(data: imageData)
+            }
+        }
     }
+    
+    @IBAction func didTapSaveNote(_ sender: UIButton) {
+        userDetailViewModel.saveUserNote(forUserID: userName, note: self.notesTxtView.text)
+    }
+    
 
 }

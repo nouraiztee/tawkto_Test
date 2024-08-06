@@ -59,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fzY-4g-0l3"/>
                     <connections>
+                        <outlet property="seacrhBar" destination="CS9-al-CnP" id="lj5-hH-Ud5"/>
                         <outlet property="userListTableView" destination="Rag-P1-Iaq" id="jrG-3n-h47"/>
                     </connections>
                 </viewController>
@@ -74,7 +75,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dEC-15-hFn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dEC-15-hFn">
                                 <rect key="frame" x="0.0" y="59" width="393" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="9KO-JK-qOG"/>
@@ -155,6 +156,9 @@
                                     <constraint firstAttribute="width" constant="100" id="STH-Bw-uYa"/>
                                 </constraints>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="didTapSaveNote:" destination="ndn-UW-nFU" eventType="touchUpInside" id="ixy-v9-MgK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DkP-w6-oWI"/>

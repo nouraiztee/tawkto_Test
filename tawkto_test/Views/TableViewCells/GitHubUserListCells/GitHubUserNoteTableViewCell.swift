@@ -42,5 +42,10 @@ class GitHubUserNoteTableViewCell: GitHubUserListTableViewCell {
     override func configure(withDataModel model: GitHubUserCellViewModel?) {
         super.configure(withDataModel: model)
         
+        guard let model = model else { return }
+        let hasNote = model.hasNote() && !model.getNote().isEmpty
+        
+        noteImageView.image = hasNote ? UIImage(resource: .icNote) : nil
+        
     }
 }

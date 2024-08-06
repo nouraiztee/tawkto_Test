@@ -14,6 +14,7 @@ protocol UserDetailsViewModelInput {
 class UserDetailsViewModel: UserDetailsViewModelInput {
     
     var apiService: GitHubUsersAPIServices
+    var localStorageService: GitHubUserCoreDataService
     var didFetchUserDetails: (GitHubUserPresentable) -> () = {_ in }
     var userName: String!
     
@@ -25,9 +26,11 @@ class UserDetailsViewModel: UserDetailsViewModelInput {
     }
     
     
-    init(apiService: GitHubUsersAPIServices, userName: String) {
+    init(apiService: GitHubUsersAPIServices, userName: String, localStorageService: GitHubUserCoreDataService) {
         self.apiService = apiService
         self.userName = userName
+        self.localStorageService = localStorageService
+        
     }
     
     func getUserDetails() {
@@ -39,5 +42,13 @@ class UserDetailsViewModel: UserDetailsViewModelInput {
                 break
             }
         }
+    }
+    
+    func getUserNote(forUserID login: String) -> String {
+        self.localStorageService.getNote(forUser: login)
+    }
+    
+    func saveUserNote(forUserID login: String, note: String) {
+        self.localStorageService.saveNote(forUser: login, note: note)
     }
 }

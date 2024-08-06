@@ -16,37 +16,119 @@ class UserListViewModel: UserListViewModelInput {
     var apiService: GitHubUsersAPIServices
     var didFetchUsersList: () -> () = {}
     
+    var localStorageService: GitHubUserCoreDataService
+    
     var usersList: [GitHubUserPresentable]? {
         didSet {
             didFetchUsersList()
         }
     }
     
+    var searchedUserList: [GitHubUserPresentable]? {
+        didSet {
+            didFetchUsersList()
+        }
+    }
     
-    init(apiService: GitHubUsersAPIServices) {
+    var isSearching = false
+    
+    
+    init(apiService: GitHubUsersAPIServices, localStorageService: GitHubUserCoreDataService) {
         self.apiService = apiService
+        self.localStorageService = localStorageService
     }
     
     func getUsers(sinceID: Int = 0) {
+        
+        if isSearching {
+            return
+        }
+        
         apiService.getUsersFromAPI(since: sinceID) { usersResult in
             switch usersResult {
             case .success(let githubUsers):
                 let users = githubUsers.map({ user in
                     user.gitHubUser
                 })
-                let presentableUsers = users.map({ user in
-                    GitHubUserPresentable(userModel: user)
-                })
-                
-                if (self.usersList?.isEmpty ?? false) || sinceID == 0 {
-                    self.usersList = presentableUsers
-                }else {
-                    self.usersList?.append(contentsOf: presentableUsers)
-                }
-                
+                self.handleSucessResponse(users: users, shouldResetStorage: ((self.usersList?.isEmpty ?? false) || sinceID == 0 ))
             case .failure(let error):
-                break
+                let users = self.localStorageService.getUsers()
+                if !users.isEmpty {
+                    let customUsers = users.map({
+                        $0.customUser
+                    })
+                    let presentableUsers = customUsers.map({ user in
+                        GitHubUserPresentable(userModel: user)
+                    })
+                    if self.usersList?.isEmpty ?? false || sinceID == 0 {
+                        self.usersList = presentableUsers
+                    }else {
+                        self.usersList?.append(contentsOf: presentableUsers)
+                    }
+                    self.didFetchUsersList()
+                }
             }
         }
+    }
+    
+    func getUserListCount() -> Int {
+        if isSearching {
+            return searchedUserList?.count ?? 0
+        }else {
+            return usersList?.count ?? 0
+        }
+    }
+    
+    func getUserDataSource() -> [GitHubUserPresentable]? {
+        if isSearching {
+            return searchedUserList
+        }else {
+            return usersList
+        }
+    }
+    
+    private func handleSucessResponse(users: [GitHubUserModel], shouldResetStorage: Bool = false) {
+        
+        for user in users {
+            self.localStorageService.saveUser(user: user)
+        }
+        
+        let presentableUsers = users.map({ user in
+            var userWithNote = user
+            userWithNote.note = localStorageService.getNote(forUser: user.login ?? "")
+            return GitHubUserPresentable(userModel: userWithNote)
+        })
+        
+        if shouldResetStorage {
+            self.usersList = presentableUsers
+        }else {
+            self.usersList?.append(contentsOf: presentableUsers)
+        }
+    }
+    
+    func getLocalUser() -> [GitHubUserModel] {
+        localStorageService.getUsers().map({
+            $0.customUser
+        })
+    }
+    
+    func setSearch(isSeacrhing: Bool) {
+        self.isSearching = isSeacrhing
+    }
+    
+    func getSearchedUser(withKeyWord keyword: String) {
+        let searchedUsers = usersList?.filter({
+            let matchedUserName = $0.getUsername().lowercased().contains(keyword.lowercased())
+            let matchedNote = $0.getNote().lowercased().contains(keyword.lowercased())
+            
+            return matchedUserName || matchedNote
+        })
+        
+        if isSearching {
+            self.searchedUserList = searchedUsers
+        }else {
+            self.searchedUserList = usersList
+        }
+        
     }
 }
