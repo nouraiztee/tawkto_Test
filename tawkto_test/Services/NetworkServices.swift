@@ -38,8 +38,7 @@ struct NetworkManager: NetworkServices {
     static let shared = NetworkManager()
     
     func callGetAPI<T: Decodable>(forURL url: URL, withresponseType:T.Type, completion: @escaping (Result<T, NetworkError>) -> ()) {
-        //cache api response, load from cache if available else fetch remote
-        let urlRequest = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        let urlRequest = URLRequest(url: url)
         
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             

@@ -56,6 +56,10 @@ struct GitHubUserPresentable: GitHubUserCellViewModel {
         user.note ?? ""
     }
     
+    mutating func set(note: String) {
+        user.note = note
+    }
+    
     func dequeueCell(tableView: UITableView, indexPath: IndexPath) -> UserCustomCell? {
         var cell: UserCustomCell? = nil
         

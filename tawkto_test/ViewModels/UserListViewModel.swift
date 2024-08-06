@@ -23,7 +23,6 @@ class UserListViewModel: UserListViewModelInput {
             didFetchUsersList()
         }
     }
-    
     var searchedUserList: [GitHubUserPresentable]? {
         didSet {
             didFetchUsersList()
@@ -31,7 +30,7 @@ class UserListViewModel: UserListViewModelInput {
     }
     
     var isSearching = false
-    
+    private var queue = OperationQueue()
     
     init(apiService: GitHubUsersAPIServices, localStorageService: GitHubUserCoreDataService) {
         self.apiService = apiService
@@ -44,31 +43,38 @@ class UserListViewModel: UserListViewModelInput {
             return
         }
         
-        apiService.getUsersFromAPI(since: sinceID) { usersResult in
-            switch usersResult {
-            case .success(let githubUsers):
-                let users = githubUsers.map({ user in
-                    user.gitHubUser
-                })
-                self.handleSucessResponse(users: users, shouldResetStorage: ((self.usersList?.isEmpty ?? false) || sinceID == 0 ))
-            case .failure(let error):
-                let users = self.localStorageService.getUsers()
-                if !users.isEmpty {
-                    let customUsers = users.map({
-                        $0.customUser
+        queue.cancelAllOperations()
+        queue.qualityOfService = .background
+        
+        let operation = BlockOperation { [unowned self] in
+            
+            apiService.getUsersFromAPI(since: sinceID) { usersResult in
+                switch usersResult {
+                case .success(let githubUsers):
+                    let users = githubUsers.map({ user in
+                        user.gitHubUser
                     })
-                    let presentableUsers = customUsers.map({ user in
-                        GitHubUserPresentable(userModel: user)
-                    })
-                    if self.usersList?.isEmpty ?? false || sinceID == 0 {
-                        self.usersList = presentableUsers
-                    }else {
-                        self.usersList?.append(contentsOf: presentableUsers)
+                    self.handleSucessResponse(users: users, shouldResetStorage: ((self.usersList?.isEmpty ?? false) || sinceID == 0 ))
+                case .failure(let error):
+                    let users = self.localStorageService.getUsers()
+                    if !users.isEmpty {
+                        let customUsers = users.map({
+                            $0.customUser
+                        })
+                        let presentableUsers = customUsers.map({ user in
+                            GitHubUserPresentable(userModel: user)
+                        })
+                        if self.usersList?.isEmpty ?? false || sinceID == 0 {
+                            self.usersList = presentableUsers
+                        }else {
+                            self.usersList?.append(contentsOf: presentableUsers)
+                        }
+                        self.didFetchUsersList()
                     }
-                    self.didFetchUsersList()
                 }
             }
         }
+        self.queue.addOperation(operation)
     }
     
     func getUserListCount() -> Int {
@@ -106,9 +112,9 @@ class UserListViewModel: UserListViewModelInput {
         }
     }
     
-    func getLocalUser() -> [GitHubUserModel] {
-        localStorageService.getUsers().map({
-            $0.customUser
+    func getLocalUsers() {
+        usersList = localStorageService.getUsers().map({
+            GitHubUserPresentable(userModel: $0.customUser)
         })
     }
     

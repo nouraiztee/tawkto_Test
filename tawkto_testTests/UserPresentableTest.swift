@@ -17,10 +17,6 @@ final class UserPresentableTest: XCTestCase {
         mockUser = getMockUser()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testGetUserID() throws {
         XCTAssertEqual(mockUser.getUserID(), 6)
     }
@@ -40,13 +36,6 @@ final class UserPresentableTest: XCTestCase {
     
     func testGetFollowingCount() throws {
         XCTAssertEqual(mockUser.getFollowingCount(), 3)
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
     
     private func getMockUser() -> GitHubUserPresentable {

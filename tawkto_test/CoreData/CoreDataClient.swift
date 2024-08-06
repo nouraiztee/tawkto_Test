@@ -68,7 +68,6 @@ class CoreDataClient: GitHubUserCoreDataService {
     }
     
     func saveUser(user: GitHubUserModel) {
-        do {
             let existingUser = getUser(username: user.login ?? "")
             if existingUser != nil {
                 existingUser?.login = user.login
@@ -85,11 +84,7 @@ class CoreDataClient: GitHubUserCoreDataService {
                 let newUser = NSManagedObject(entity: entity!, insertInto: backgroundContext) as! CoreDataUser
                 newUser.setData(FromUserModel: user)
             }
-            
             saveContext()
-        }catch {
-            print(error)
-        }
     }
     
     func getUsers() -> [CoreDataUser] {

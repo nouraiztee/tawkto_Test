@@ -60,7 +60,7 @@ class ImageLoader {
 
             // Handle potential file system errors
             catch let fileError {
-                completion(error)
+                completion(fileError)
             }
         }
 

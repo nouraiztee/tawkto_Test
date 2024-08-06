@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "0EC77367-A7A1-4ADD-9979-00E7D48AF7DD",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:tawkto_test.xcodeproj",
+      "identifier" : "8FE5CDE22C593D580043613E",
+      "name" : "tawkto_test"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:tawkto_test.xcodeproj",
+        "identifier" : "8FE5CDF82C593D5A0043613E",
+        "name" : "tawkto_testTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:tawkto_test.xcodeproj",
+        "identifier" : "8FE5CE022C593D5A0043613E",
+        "name" : "tawkto_testUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

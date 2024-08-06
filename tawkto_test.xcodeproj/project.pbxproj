@@ -35,13 +35,14 @@
 		8F8EF94B2C621EF0007D4DA2 /* UITableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE442C5A37BF0043613E /* UITableView+RegisterCell.swift */; };
 		8F8EF94C2C621F24007D4DA2 /* CoreDataUserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE5E2C5F9ED40043613E /* CoreDataUserModel.xcdatamodeld */; };
 		8F8EF94D2C621F3F007D4DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5CDEF2C593D5A0043613E /* Assets.xcassets */; };
+		8F8EF9502C6232AF007D4DA2 /* MockApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF94F2C6232AF007D4DA2 /* MockApiServices.swift */; };
+		8F8EF9512C6232AF007D4DA2 /* MockApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF94F2C6232AF007D4DA2 /* MockApiServices.swift */; };
 		8FE5CDE72C593D580043613E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDE62C593D580043613E /* AppDelegate.swift */; };
 		8FE5CDE92C593D580043613E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDE82C593D580043613E /* SceneDelegate.swift */; };
 		8FE5CDEB2C593D580043613E /* GitHubUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDEA2C593D580043613E /* GitHubUserListViewController.swift */; };
 		8FE5CDEE2C593D580043613E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5CDEC2C593D580043613E /* Main.storyboard */; };
 		8FE5CDF02C593D5A0043613E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5CDEF2C593D5A0043613E /* Assets.xcassets */; };
 		8FE5CDF32C593D5A0043613E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5CDF12C593D5A0043613E /* LaunchScreen.storyboard */; };
-		8FE5CDFE2C593D5A0043613E /* tawkto_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDFD2C593D5A0043613E /* tawkto_testTests.swift */; };
 		8FE5CE082C593D5A0043613E /* tawkto_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE072C593D5A0043613E /* tawkto_testUITests.swift */; };
 		8FE5CE0A2C593D5A0043613E /* tawkto_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE092C593D5A0043613E /* tawkto_testUITestsLaunchTests.swift */; };
 		8FE5CE362C59EDB40043613E /* GitHubUserAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE352C59EDB40043613E /* GitHubUserAPIModel.swift */; };
@@ -93,6 +94,8 @@
 		8F8EF9332C6219B0007D4DA2 /* GithubUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubUsers.json; sourceTree = "<group>"; };
 		8F8EF9362C621A11007D4DA2 /* GithubUserDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubUserDetail.json; sourceTree = "<group>"; };
 		8F8EF9392C621AC4007D4DA2 /* UserPresentableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresentableTest.swift; sourceTree = "<group>"; };
+		8F8EF94E2C622F72007D4DA2 /* tawkto_test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = tawkto_test.xctestplan; sourceTree = "<group>"; };
+		8F8EF94F2C6232AF007D4DA2 /* MockApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiServices.swift; sourceTree = "<group>"; };
 		8FE5CDE32C593D580043613E /* tawkto_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tawkto_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE5CDE62C593D580043613E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE5CDE82C593D580043613E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +105,6 @@
 		8FE5CDF22C593D5A0043613E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE5CDF42C593D5A0043613E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE5CDF92C593D5A0043613E /* tawkto_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tawkto_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FE5CDFD2C593D5A0043613E /* tawkto_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tawkto_testTests.swift; sourceTree = "<group>"; };
 		8FE5CE032C593D5A0043613E /* tawkto_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tawkto_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE5CE072C593D5A0043613E /* tawkto_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tawkto_testUITests.swift; sourceTree = "<group>"; };
 		8FE5CE092C593D5A0043613E /* tawkto_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tawkto_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -163,13 +165,21 @@
 			path = MockResponses;
 			sourceTree = "<group>";
 		};
+		8F8EF9592C623DD7007D4DA2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8F8EF92F2C61FF86007D4DA2 /* ImageLoader.swift */,
+				8F8EF92C2C611BA9007D4DA2 /* Reachability.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		8FE5CDDA2C593D580043613E = {
 			isa = PBXGroup;
 			children = (
+				8F8EF9592C623DD7007D4DA2 /* Helper */,
+				8F8EF94E2C622F72007D4DA2 /* tawkto_test.xctestplan */,
 				8F8EF9322C621965007D4DA2 /* MockResponses */,
-				8F8EF92F2C61FF86007D4DA2 /* ImageLoader.swift */,
-				8F8EF92C2C611BA9007D4DA2 /* Reachability.swift */,
-				8FE5CE792C5FA7BC0043613E /* CoreDataUser+CoreDataClass.swift */,
 				8FE5CDE52C593D580043613E /* tawkto_test */,
 				8FE5CDFC2C593D5A0043613E /* tawkto_testTests */,
 				8FE5CE062C593D5A0043613E /* tawkto_testUITests */,
@@ -208,7 +218,6 @@
 		8FE5CDFC2C593D5A0043613E /* tawkto_testTests */ = {
 			isa = PBXGroup;
 			children = (
-				8FE5CDFD2C593D5A0043613E /* tawkto_testTests.swift */,
 				8F8EF9392C621AC4007D4DA2 /* UserPresentableTest.swift */,
 			);
 			path = tawkto_testTests;
@@ -268,6 +277,7 @@
 				8FE5CE4E2C5A7B540043613E /* APIServices.swift */,
 				8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */,
 				8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */,
+				8F8EF94F2C6232AF007D4DA2 /* MockApiServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -275,7 +285,7 @@
 		8FE5CE1B2C5940140043613E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8FE5CE1D2C5940440043613E /* GitHubUserList */,
+				8FE5CDEA2C593D580043613E /* GitHubUserListViewController.swift */,
 				8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */,
 			);
 			path = Controllers;
@@ -290,17 +300,10 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		8FE5CE1D2C5940440043613E /* GitHubUserList */ = {
-			isa = PBXGroup;
-			children = (
-				8FE5CDEA2C593D580043613E /* GitHubUserListViewController.swift */,
-			);
-			path = GitHubUserList;
-			sourceTree = "<group>";
-		};
 		8FE5CE1E2C5940760043613E /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				8FE5CE792C5FA7BC0043613E /* CoreDataUser+CoreDataClass.swift */,
 				8FE5CE6D2C5FA3300043613E /* CoreDataService.swift */,
 				8FE5CE702C5FA5A50043613E /* CoreDataClient.swift */,
 			);
@@ -481,6 +484,7 @@
 			files = (
 				8FE5CE402C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift in Sources */,
 				8FE5CE552C5CC5C50043613E /* UITableView+FooterLoader.swift in Sources */,
+				8F8EF9502C6232AF007D4DA2 /* MockApiServices.swift in Sources */,
 				8FE5CE7B2C5FA7BC0043613E /* CoreDataUser+CoreDataClass.swift in Sources */,
 				8FE5CE472C5A3D450043613E /* UserListViewModel.swift in Sources */,
 				8FE5CDEB2C593D580043613E /* GitHubUserListViewController.swift in Sources */,
@@ -520,6 +524,7 @@
 				8F8EF93F2C621EC6007D4DA2 /* UserDetailsViewModel.swift in Sources */,
 				8F8EF9482C621EE5007D4DA2 /* APIServices.swift in Sources */,
 				8F8EF93D2C621E74007D4DA2 /* GitHubUserAPIModel.swift in Sources */,
+				8F8EF9512C6232AF007D4DA2 /* MockApiServices.swift in Sources */,
 				8F8EF9432C621ED6007D4DA2 /* GitHubUserNoteTableViewCell.swift in Sources */,
 				8F8EF94C2C621F24007D4DA2 /* CoreDataUserModel.xcdatamodeld in Sources */,
 				8F8EF9442C621ED9007D4DA2 /* GitHubUserInvertedTableViewCell.swift in Sources */,
@@ -535,7 +540,6 @@
 				8F8EF9402C621EC9007D4DA2 /* UserListViewModel.swift in Sources */,
 				8F8EF93E2C621E9D007D4DA2 /* GitHubUserCellViewModel.swift in Sources */,
 				8F8EF93C2C621E35007D4DA2 /* GitHubUserCustomModel.swift in Sources */,
-				8FE5CDFE2C593D5A0043613E /* tawkto_testTests.swift in Sources */,
 				8F8EF9472C621EE3007D4DA2 /* APIEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,7 +771,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nouraiztaimour.tawkto-testTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -786,7 +790,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nouraiztaimour.tawkto-testTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -12,7 +12,15 @@ class GitHubUserInvertedTableViewCell: GitHubUserListTableViewCell {
     override func configure(withDataModel model: GitHubUserCellViewModel?) {
         super.configure(withDataModel: model)
         
-        
+        guard let dataModel = model else { return }
+        ImageLoader.shared.loadData(url: URL(string: dataModel.getAvatarUrl())!) { data, error in
+            guard let data = data else { return }
+            DispatchQueue.main.async {
+                let image = UIImage(data: data)
+                self.invertImage(image: image)
+                self.userAvatarImageView.layer.cornerRadius = self.userAvatarImageView.frame.height / 2
+            }
+        }
     }
     
     private func invertImage(image: UIImage?) {

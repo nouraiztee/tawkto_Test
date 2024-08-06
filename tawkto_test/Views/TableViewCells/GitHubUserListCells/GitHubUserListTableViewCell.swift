@@ -48,18 +48,16 @@ class GitHubUserListTableViewCell: UITableViewCell, UserCustomCell {
             
             // Add constraints to the UI elements
             NSLayoutConstraint.activate([
-                // Constraints for customImageView
+                
                 userAvatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
                 userAvatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
                 userAvatarImageView.widthAnchor.constraint(equalToConstant: 50),
                 userAvatarImageView.heightAnchor.constraint(equalToConstant: 50),
                 
-                // Constraints for titleLabel
                 userNameLabel.leadingAnchor.constraint(equalTo: userAvatarImageView.trailingAnchor, constant: 10),
                 userNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
                 userNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
                 
-                // Constraints for subtitleLabel
                 profileUrlLabel.leadingAnchor.constraint(equalTo: userAvatarImageView.trailingAnchor, constant: 10),
                 profileUrlLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
                 profileUrlLabel.topAnchor.constraint(equalTo: userNameLabel.bottomAnchor, constant: 5),
@@ -83,9 +81,6 @@ class GitHubUserListTableViewCell: UITableViewCell, UserCustomCell {
                 self.userAvatarImageView.layer.cornerRadius = self.userAvatarImageView.frame.height / 2
             }
         }
-        
-       
-        
     }
 }
 

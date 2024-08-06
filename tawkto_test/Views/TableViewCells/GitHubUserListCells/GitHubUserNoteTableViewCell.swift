@@ -30,8 +30,6 @@ class GitHubUserNoteTableViewCell: GitHubUserListTableViewCell {
             noteImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             noteImageView.widthAnchor.constraint(equalToConstant: 20),
             noteImageView.heightAnchor.constraint(equalToConstant: 20),
-            
-            //profileUrlLabel.trailingAnchor.constraint(equalTo: noteImageView.leadingAnchor, constant: -8)
         ])
     }
     
