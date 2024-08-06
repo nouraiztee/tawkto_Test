@@ -30,7 +30,6 @@ Assessment for job application for tawk.to
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/IcKmc31.png" width=350></td>
     <td><img src="https://imgur.com/a/TBTQq5g.png" width=350></td>
     <td><img src="https://i.imgur.com/XPqWXCm.png" width=350></td>
     <td><img src="https://i.imgur.com/lcqgbnW.png" width=350></td>
