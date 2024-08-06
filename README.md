@@ -28,20 +28,18 @@ Assessment for job application for tawk.to
 
 ## App Screenshots
 
-<table>
-  <tr>
-    <td><img src=![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 03](https://github.com/user-attachments/assets/11921822-0853-4f5b-837f-fd21f6c39ed3) width=350></td>
-    <td><img src="https://i.imgur.com/Qps0efA.png" width=350></td>
-    <td><img src="https://i.imgur.com/XPqWXCm.png" width=350></td>
-    <td><img src="https://i.imgur.com/lcqgbnW.png" width=350></td>
-    <td><img src="https://i.imgur.com/iXXom5J.png" width=350></td>
-  </tr>
-</table>
+![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 05 35](https://github.com/user-attachments/assets/4cebc01c-b4ff-49e3-a49d-dbd5334aa27e)
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 03](https://github.com/user-attachments/assets/11921822-0853-4f5b-837f-fd21f6c39ed3)
-![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 10](https://github.com/user-attachments/assets/2e0317ee-9d18-496e-8eb9-2a8f6ab8aa9d)
-![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 41](https://github.com/user-attachments/assets/e5430364-dd8e-4f15-ad24-3dbb4d6ce011)
-![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 10 33](https://github.com/user-attachments/assets/b5314191-4f2e-4721-bac0-8ed6e129745b)
+![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 03](https://github.com/user-attachments/assets/dc659c4d-0d29-4d6b-8d1b-1e85bff20691)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 10](https://github.com/user-attachments/assets/b70505b8-3254-4285-86c2-f24cee0e38fa)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 07 41](https://github.com/user-attachments/assets/ff780d56-61cb-484e-9728-f5387a163571)
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-08-06 at 23 10 33](https://github.com/user-attachments/assets/58e5f953-f9b8-4988-a60b-be161d6392fb)
+
+
+
 
 
 
