@@ -68,8 +68,8 @@ class GitHubUserDetailsViewController: UIViewController {
         guard let url = URL(string: user.getAvatarUrl()) else { return }
         ImageLoader.shared.loadData(url: url) { data, error in
             if let imageData = data {
-                DispatchQueue.main.async {
-                    self.userAvatarImage.image = UIImage(data: imageData)
+                DispatchQueue.main.async { [weak self] in
+                    self?.userAvatarImage.image = UIImage(data: imageData)
                 }
             }
         }

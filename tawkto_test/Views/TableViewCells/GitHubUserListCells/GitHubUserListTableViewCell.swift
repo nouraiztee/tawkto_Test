@@ -76,9 +76,9 @@ class GitHubUserListTableViewCell: UITableViewCell, UserCustomCell {
         profileUrlLabel.text = dataModel.getProfileUrl()
         ImageLoader.shared.loadData(url: URL(string: dataModel.getAvatarUrl())!) { data, error in
             guard let data = data else { return }
-            DispatchQueue.main.async {
-                self.userAvatarImageView.image = UIImage(data: data)
-                self.userAvatarImageView.layer.cornerRadius = self.userAvatarImageView.frame.height / 2
+            DispatchQueue.main.async { [weak self] in
+                self?.userAvatarImageView.image = UIImage(data: data)
+                self?.userAvatarImageView.layer.cornerRadius = (self?.userAvatarImageView.frame.height ?? 0) / 2
             }
         }
     }

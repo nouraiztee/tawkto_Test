@@ -15,10 +15,10 @@ class GitHubUserInvertedTableViewCell: GitHubUserListTableViewCell {
         guard let dataModel = model else { return }
         ImageLoader.shared.loadData(url: URL(string: dataModel.getAvatarUrl())!) { data, error in
             guard let data = data else { return }
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
                 let image = UIImage(data: data)
-                self.invertImage(image: image)
-                self.userAvatarImageView.layer.cornerRadius = self.userAvatarImageView.frame.height / 2
+                self?.invertImage(image: image)
+                self?.userAvatarImageView.layer.cornerRadius = (self?.userAvatarImageView.frame.height ?? 0) / 2
             }
         }
     }
