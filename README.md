@@ -24,6 +24,8 @@ Assessment for job application for tawk.to
 - Search using name & note
 - Unit Testing
 - Flexible tableCells using protocols
+- No connection banner
+- Retry when connection available.
 
 
 ## App Screenshots
