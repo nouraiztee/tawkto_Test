@@ -94,6 +94,7 @@ class GitHubUserListViewController: UIViewController {
         }
         reachability.whenUnreachable = { _ in
             self.showNoInternetBanner()
+            self.isFirstLaunch = false
         }
 
         do {
