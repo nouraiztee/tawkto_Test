@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SwiftUI
+import Network
 
 class GitHubUserListViewController: UIViewController {
 
@@ -13,7 +15,11 @@ class GitHubUserListViewController: UIViewController {
     @IBOutlet weak var seacrhBar: UISearchBar!
     
     var usersViewModel = UserListViewModel(apiService: GitHubUsersAPIClient(), localStorageService: CoreDataClient.shared)
-    var noConnectionView = UIView()
+    private var noInternetBanner: NoInternetBannerView!
+    
+    let reachability = try! Reachability()
+    
+    var isFirstLaunch = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +33,9 @@ class GitHubUserListViewController: UIViewController {
         
         registerCell()
         
+        setupRecheability()
+        setupNoInternetBanner()
+        
         usersViewModel.getUsers()
         
         //viewmodel binding
@@ -36,6 +45,13 @@ class GitHubUserListViewController: UIViewController {
                 self.userListTableView.reloadData()
             }
         }
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
     }
     
     private func registerCell() {
@@ -46,6 +62,60 @@ class GitHubUserListViewController: UIViewController {
             GitHubUserNoteInvertedTableViewCell.self
         ])
     }
+    
+    private func setupNoInternetBanner() {
+           noInternetBanner = NoInternetBannerView()
+           noInternetBanner.translatesAutoresizingMaskIntoConstraints = false
+           noInternetBanner.isHidden = true
+           view.addSubview(noInternetBanner)
+           
+           NSLayoutConstraint.activate([
+               noInternetBanner.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+               noInternetBanner.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+               noInternetBanner.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+               noInternetBanner.heightAnchor.constraint(equalToConstant: 50)
+           ])
+       }
+    
+    func setupRecheability() {
+        reachability.whenReachable = { reachability in
+            if self.isFirstLaunch {
+                self.isFirstLaunch = false
+                return
+            }
+            self.showRestoredInternetBanner()
+            self.usersViewModel.getUsers()
+        }
+        reachability.whenUnreachable = { _ in
+            self.showNoInternetBanner()
+        }
+
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
+    }
+       
+       private func showNoInternetBanner() {
+           noInternetBanner.updateBanner(message: "No Internet Connection", backgroundColor: .red)
+           noInternetBanner.isHidden = false
+           
+           // Hide the banner after 2 seconds
+           DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+                   self?.noInternetBanner.isHidden = true
+           }
+       }
+       
+       private func showRestoredInternetBanner() {
+           noInternetBanner.updateBanner(message: "Internet Connection Restored", backgroundColor: .green)
+           noInternetBanner.isHidden = false
+           
+           // Hide the banner after 2 seconds
+           DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+               self?.noInternetBanner.isHidden = true
+           }
+       }
 }
 
 extension GitHubUserListViewController: UITableViewDataSource {
@@ -71,18 +141,29 @@ extension GitHubUserListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if reachability.connection == .unavailable {
+            return
+        }
+        
         if indexPath.row == (usersViewModel.usersList?.count ?? 0) - 1 {
             usersViewModel.getUsers(sinceID: usersViewModel.usersList?.last?.getUserID() ?? 0)
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if reachability.connection == .unavailable {
+            return
+        }
+        
         guard let userName = usersViewModel.getUserDataSource()?[indexPath.row].getUsername() else { return }
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GitHubUserDetailsViewController") as! GitHubUserDetailsViewController
-        vc.userName = userName
-        vc.delegate = self
+        var userDetailView = GithubUserDetailView()
+        userDetailView.userName = userName
+        userDetailView.userAvatarURL = usersViewModel.getUserDataSource()?[indexPath.row].getAvatarUrl() ?? ""
+        let vc = UIHostingController(rootView: userDetailView)
         self.navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
 }
 

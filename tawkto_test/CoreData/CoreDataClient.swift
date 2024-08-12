@@ -9,12 +9,14 @@ import Foundation
 import CoreData
 
 protocol GitHubUserCoreDataService: CoreDataService {
-    func saveUser(user: GitHubUserModel)
+    func setUser(user: GitHubUserModel) -> CoreDataUser 
     func getUsers() -> [CoreDataUser]
     func getUser(username: String) -> CoreDataUser?
     func updateUser(user: GitHubUserModel)
     func saveNote(forUser login: String, note: String)
     func getNote(forUser login: String) -> String
+    
+    func saveContext()
 }
 
 class CoreDataClient: GitHubUserCoreDataService {
@@ -67,7 +69,7 @@ class CoreDataClient: GitHubUserCoreDataService {
         }
     }
     
-    func saveUser(user: GitHubUserModel) {
+    func setUser(user: GitHubUserModel) -> CoreDataUser {
             let existingUser = getUser(username: user.login ?? "")
             if existingUser != nil {
                 existingUser?.login = user.login
@@ -79,12 +81,13 @@ class CoreDataClient: GitHubUserCoreDataService {
                 existingUser?.followers = Int32(exactly: user.followers ?? -1) ?? -1
                 existingUser?.following = Int32(exactly: user.following ?? -1) ?? -1
                 existingUser?.url = user.url
+                return existingUser!
             }else {
                 let entity = NSEntityDescription.entity(forEntityName: "CoreDataUser", in: backgroundContext)
                 let newUser = NSManagedObject(entity: entity!, insertInto: backgroundContext) as! CoreDataUser
                 newUser.setData(FromUserModel: user)
+                return newUser
             }
-            saveContext()
     }
     
     func getUsers() -> [CoreDataUser] {

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F8EF92D2C611BA9007D4DA2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF92C2C611BA9007D4DA2 /* Reachability.swift */; };
-		8F8EF92E2C611BA9007D4DA2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF92C2C611BA9007D4DA2 /* Reachability.swift */; };
 		8F8EF9302C61FF86007D4DA2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF92F2C61FF86007D4DA2 /* ImageLoader.swift */; };
 		8F8EF9312C61FF86007D4DA2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF92F2C61FF86007D4DA2 /* ImageLoader.swift */; };
 		8F8EF9342C6219B0007D4DA2 /* GithubUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F8EF9332C6219B0007D4DA2 /* GithubUsers.json */; };
@@ -37,6 +35,11 @@
 		8F8EF94D2C621F3F007D4DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE5CDEF2C593D5A0043613E /* Assets.xcassets */; };
 		8F8EF9502C6232AF007D4DA2 /* MockApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF94F2C6232AF007D4DA2 /* MockApiServices.swift */; };
 		8F8EF9512C6232AF007D4DA2 /* MockApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EF94F2C6232AF007D4DA2 /* MockApiServices.swift */; };
+		8FDB049B2C68E8F500C08A17 /* GithubUserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB049A2C68E8F500C08A17 /* GithubUserDetailView.swift */; };
+		8FDB049D2C69F2B300C08A17 /* NoInternetBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB049C2C69F2B200C08A17 /* NoInternetBannerView.swift */; };
+		8FDB049E2C69F2B300C08A17 /* NoInternetBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB049C2C69F2B200C08A17 /* NoInternetBannerView.swift */; };
+		8FDB04A42C69FC5000C08A17 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB04A22C69FC5000C08A17 /* Reachability.swift */; };
+		8FDB04A52C69FC5000C08A17 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB04A22C69FC5000C08A17 /* Reachability.swift */; };
 		8FE5CDE72C593D580043613E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDE62C593D580043613E /* AppDelegate.swift */; };
 		8FE5CDE92C593D580043613E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDE82C593D580043613E /* SceneDelegate.swift */; };
 		8FE5CDEB2C593D580043613E /* GitHubUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDEA2C593D580043613E /* GitHubUserListViewController.swift */; };
@@ -89,13 +92,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F8EF92C2C611BA9007D4DA2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		8F8EF92F2C61FF86007D4DA2 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		8F8EF9332C6219B0007D4DA2 /* GithubUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubUsers.json; sourceTree = "<group>"; };
 		8F8EF9362C621A11007D4DA2 /* GithubUserDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubUserDetail.json; sourceTree = "<group>"; };
 		8F8EF9392C621AC4007D4DA2 /* UserPresentableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresentableTest.swift; sourceTree = "<group>"; };
 		8F8EF94E2C622F72007D4DA2 /* tawkto_test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = tawkto_test.xctestplan; sourceTree = "<group>"; };
 		8F8EF94F2C6232AF007D4DA2 /* MockApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiServices.swift; sourceTree = "<group>"; };
+		8FDB049A2C68E8F500C08A17 /* GithubUserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserDetailView.swift; sourceTree = "<group>"; };
+		8FDB049C2C69F2B200C08A17 /* NoInternetBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetBannerView.swift; sourceTree = "<group>"; };
+		8FDB04A22C69FC5000C08A17 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8FDB04A32C69FC5000C08A17 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		8FE5CDE32C593D580043613E /* tawkto_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tawkto_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE5CDE62C593D580043613E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE5CDE82C593D580043613E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,7 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				8F8EF92F2C61FF86007D4DA2 /* ImageLoader.swift */,
-				8F8EF92C2C611BA9007D4DA2 /* Reachability.swift */,
+				8FDB04A32C69FC5000C08A17 /* Reachability.h */,
+				8FDB04A22C69FC5000C08A17 /* Reachability.swift */,
+				8FDB049C2C69F2B200C08A17 /* NoInternetBannerView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 				8FE5CDEF2C593D5A0043613E /* Assets.xcassets */,
 				8FE5CDF42C593D5A0043613E /* Info.plist */,
 				8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */,
+				8FDB049A2C68E8F500C08A17 /* GithubUserDetailView.swift */,
 			);
 			path = tawkto_test;
 			sourceTree = "<group>";
@@ -485,9 +494,11 @@
 				8FE5CE402C5A356F0043613E /* GitHubUserNoteInvertedTableViewCell.swift in Sources */,
 				8FE5CE552C5CC5C50043613E /* UITableView+FooterLoader.swift in Sources */,
 				8F8EF9502C6232AF007D4DA2 /* MockApiServices.swift in Sources */,
+				8FDB049D2C69F2B300C08A17 /* NoInternetBannerView.swift in Sources */,
 				8FE5CE7B2C5FA7BC0043613E /* CoreDataUser+CoreDataClass.swift in Sources */,
 				8FE5CE472C5A3D450043613E /* UserListViewModel.swift in Sources */,
 				8FE5CDEB2C593D580043613E /* GitHubUserListViewController.swift in Sources */,
+				8FDB04A42C69FC5000C08A17 /* Reachability.swift in Sources */,
 				8FE5CE362C59EDB40043613E /* GitHubUserAPIModel.swift in Sources */,
 				8FE5CE492C5A3F260043613E /* GitHubUserCustomModel.swift in Sources */,
 				8FE5CE5C2C5F88C80043613E /* UserDetailsViewModel.swift in Sources */,
@@ -503,11 +514,11 @@
 				8FE5CE4D2C5A46760043613E /* GitHubUserPresentable.swift in Sources */,
 				8FE5CE532C5A7D8F0043613E /* NetworkServices.swift in Sources */,
 				8FE5CE3C2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift in Sources */,
+				8FDB049B2C68E8F500C08A17 /* GithubUserDetailView.swift in Sources */,
 				8FE5CDE92C593D580043613E /* SceneDelegate.swift in Sources */,
 				8FE5CE5A2C5F88160043613E /* GitHubUserDetailsViewController.swift in Sources */,
 				8FE5CE452C5A37BF0043613E /* UITableView+RegisterCell.swift in Sources */,
 				8FE5CE3E2C5A35620043613E /* GitHubUserNoteTableViewCell.swift in Sources */,
-				8F8EF92D2C611BA9007D4DA2 /* Reachability.swift in Sources */,
 				8FE5CE4F2C5A7B540043613E /* APIServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +537,9 @@
 				8F8EF93D2C621E74007D4DA2 /* GitHubUserAPIModel.swift in Sources */,
 				8F8EF9512C6232AF007D4DA2 /* MockApiServices.swift in Sources */,
 				8F8EF9432C621ED6007D4DA2 /* GitHubUserNoteTableViewCell.swift in Sources */,
+				8FDB049E2C69F2B300C08A17 /* NoInternetBannerView.swift in Sources */,
 				8F8EF94C2C621F24007D4DA2 /* CoreDataUserModel.xcdatamodeld in Sources */,
+				8FDB04A52C69FC5000C08A17 /* Reachability.swift in Sources */,
 				8F8EF9442C621ED9007D4DA2 /* GitHubUserInvertedTableViewCell.swift in Sources */,
 				8F8EF9422C621ED4007D4DA2 /* GitHubUserNoteInvertedTableViewCell.swift in Sources */,
 				8F8EF9312C61FF86007D4DA2 /* ImageLoader.swift in Sources */,
@@ -534,7 +547,6 @@
 				8FE5CE7C2C5FA7BC0043613E /* CoreDataUser+CoreDataClass.swift in Sources */,
 				8F8EF9492C621EE8007D4DA2 /* GitHubUserDetailsViewController.swift in Sources */,
 				8F8EF93B2C621E11007D4DA2 /* GitHubUserPresentable.swift in Sources */,
-				8F8EF92E2C611BA9007D4DA2 /* Reachability.swift in Sources */,
 				8F8EF9462C621EE1007D4DA2 /* NetworkServices.swift in Sources */,
 				8F8EF94B2C621EF0007D4DA2 /* UITableView+RegisterCell.swift in Sources */,
 				8F8EF9402C621EC9007D4DA2 /* UserListViewModel.swift in Sources */,

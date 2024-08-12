@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
-class ImageLoader {
+class ImageLoader: ObservableObject {
     static let shared = ImageLoader()
+    
+    @Published var downloadedImage: UIImage?
     
     func loadData(url: URL, completion: @escaping (Data?, Error?) -> Void) {
         // Compute a path to the URL in the cache
@@ -29,6 +32,9 @@ class ImageLoader {
         // download the image to the cache
         download(url: url, toFile: fileCachePath) { (error) in
             let data = try? Data(contentsOf: fileCachePath.standardizedFileURL)
+            if let imageData = data {
+                self.downloadedImage = UIImage(data: imageData)
+            }
             completion(data, error)
         }
     }

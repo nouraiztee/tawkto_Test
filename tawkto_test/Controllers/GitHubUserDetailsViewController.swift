@@ -41,14 +41,14 @@ class GitHubUserDetailsViewController: UIViewController {
         notesTxtView.layer.borderWidth = 0.5
         notesTxtView.layer.borderColor = UIColor.gray.cgColor
         
-        userDetailViewModel = UserDetailsViewModel(apiService: GitHubUsersAPIClient(), userName: userName, localStorageService: CoreDataClient.shared)
+        userDetailViewModel = UserDetailsViewModel(apiService: GitHubUsersAPIClient(), localStorageService: CoreDataClient.shared)
         userDetailViewModel.didFetchUserDetails = { [weak self] user in
             guard let self = self else { return }
             DispatchQueue.main.async {
                 self.setUpUserData(user: user)
             }
         }
-        userDetailViewModel.getUserDetails()
+        userDetailViewModel.getUserDetails(userName: userName)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

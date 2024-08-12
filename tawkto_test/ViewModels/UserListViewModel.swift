@@ -55,7 +55,7 @@ class UserListViewModel: UserListViewModelInput {
                         user.gitHubUser
                     })
                     self.handleSucessResponse(users: users, shouldResetStorage: ((self.usersList?.isEmpty ?? false) || sinceID == 0 ))
-                case .failure(_):
+                case .failure(let error):
                     let users = self.localStorageService.getUsers()
                     if !users.isEmpty {
                         let customUsers = users.map({
@@ -95,9 +95,13 @@ class UserListViewModel: UserListViewModelInput {
     
     private func handleSucessResponse(users: [GitHubUserModel], shouldResetStorage: Bool = false) {
         
+        var cdUsers = [CoreDataUser]()
         for user in users {
-            self.localStorageService.saveUser(user: user)
+            let cdUser = self.localStorageService.setUser(user: user)
+            cdUsers.append(cdUser)
         }
+        
+        localStorageService.saveContext()
         
         let presentableUsers = users.map({ user in
             var userWithNote = user

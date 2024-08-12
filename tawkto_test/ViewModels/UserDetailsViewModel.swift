@@ -7,11 +7,22 @@
 
 import Foundation
 
+
 protocol UserDetailsViewModelInput {
-    func getUserDetails()
+    func getUserDetails(userName: String)
+    
+    func getUserFollowersText() -> String
+    func getUserFollowingText() -> String
+    func getUserNameText() -> String
+    func getUserCompanyText() -> String
+    func getUserBlogText() -> String
+    func getUserNote(forUserID login: String) -> String
+    func getUserAvatarData() -> Data?
+    func getUserAvatar(withUrl url: String)
+    
 }
 
-class UserDetailsViewModel: UserDetailsViewModelInput {
+class UserDetailsViewModel: UserDetailsViewModelInput, ObservableObject {
     
     var apiService: GitHubUsersAPIServices
     var localStorageService: GitHubUserCoreDataService
@@ -19,26 +30,24 @@ class UserDetailsViewModel: UserDetailsViewModelInput {
     var userName: String!
     
     
-    var userDetails: GitHubUserPresentable! {
-        didSet {
-            didFetchUserDetails(userDetails)
-        }
-    }
+    @Published var userDetails: GitHubUserPresentable!
+    @Published var imageData: Data?
     
     
-    init(apiService: GitHubUsersAPIServices, userName: String, localStorageService: GitHubUserCoreDataService) {
+    init(apiService: GitHubUsersAPIServices = GitHubUsersAPIClient(), localStorageService: GitHubUserCoreDataService = CoreDataClient.shared) {
         self.apiService = apiService
-        self.userName = userName
         self.localStorageService = localStorageService
         
     }
     
-    func getUserDetails() {
+    func getUserDetails(userName: String) {
         apiService.getUserDetails(forUserName: userName) { result in
             switch result {
             case .success(let userDetails):
-                self.userDetails = GitHubUserPresentable(userModel: userDetails.gitHubUser)
-            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.userDetails = GitHubUserPresentable(userModel: userDetails.gitHubUser)
+                }
+            case .failure(_):
                 break
             }
         }
@@ -50,5 +59,44 @@ class UserDetailsViewModel: UserDetailsViewModelInput {
     
     func saveUserNote(forUserID login: String, note: String) {
         self.localStorageService.saveNote(forUser: login, note: note)
+    }
+    
+    func getUserFollowersText() -> String {
+        guard let userDetails else {return ""}
+        return "\(userDetails.getFollowersCount())"
+    }
+    
+    func getUserFollowingText() -> String {
+        guard let userDetails else {return ""}
+        return "\(userDetails.getFollowingCount())"
+    }
+    
+    func getUserNameText() -> String {
+        guard let userDetails else {return ""}
+        return userDetails.getUsername()
+    }
+    
+    func getUserCompanyText() -> String {
+        guard let userDetails else {return ""}
+        return userDetails.getCompany()
+    }
+    
+    func getUserBlogText() -> String {
+        guard let userDetails else {return ""}
+        return userDetails.getBlog()
+    }
+    
+    func getUserAvatar(withUrl url: String) {
+        guard let url = URL(string: url) else { return }
+        ImageLoader.shared.loadData(url: url) { data, error in
+            if data != nil {
+                self.imageData = data
+            }
+        }
+    }
+    
+    func getUserAvatarData() -> Data? {
+        guard let imageData = imageData else { return nil }
+        return imageData
     }
 }
