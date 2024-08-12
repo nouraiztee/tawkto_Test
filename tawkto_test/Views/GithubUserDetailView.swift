@@ -12,12 +12,15 @@ struct GithubUserDetailView: View {
     
     var userName: String!
     var userAvatarURL: String!
+    var userNote: String!
     
-    @State private var notes = ""
+    @State var notes = ""
     @State private var showingAlert = false
     @State var title = ""
-    
     @StateObject var viewModel = UserDetailsViewModel()
+
+    @State var userNoteModified: Bool = false
+    weak var delegate: GitHubUserDetailsViewControllerDelegate?
     
     func getUserDetails(userName: String) {
         viewModel.getUserDetails(userName: userName)
@@ -83,12 +86,17 @@ struct GithubUserDetailView: View {
                     Spacer()
                     Button(action: {
                         showingAlert = true
+                        userNoteModified = true
+                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                         viewModel.saveUserNote(forUserID: userName, note: notes)
                     }, label: {
                         Text("Save")
                             .foregroundColor(.white)
-                    }).padding()
-                        .background(Color(red: 0, green: 0, blue: 0.5))
+                            .frame(maxWidth: .infinity)
+                    })
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color(red: 0, green: 0, blue: 0.8))
                         .clipShape(Rectangle())
                         .cornerRadius(10)
                     .alert(isPresented: $showingAlert) {
@@ -99,10 +107,12 @@ struct GithubUserDetailView: View {
             }.onAppear {
                 getUserDetails(userName: userName)
                 getUserAvatar()
-                notes = viewModel.getUserNote(forUserID: userName)
+                notes = userNote
             }
             .onDisappear(perform: {
-                
+                if userNoteModified {
+                    delegate?.didPopUSerDetailVC(withNote: notes, userName: userName)
+                }
             })
             .navigationTitle(userName)
         }
@@ -110,5 +120,13 @@ struct GithubUserDetailView: View {
 }
 
 #Preview {
-    GithubUserDetailView()
+    GithubUserDetailView( notes: "")
 }
+
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif

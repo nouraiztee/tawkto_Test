@@ -9,6 +9,10 @@ import UIKit
 import SwiftUI
 import Network
 
+protocol GitHubUserDetailsViewControllerDelegate: AnyObject {
+    func didPopUSerDetailVC(withNote: String, userName: String)
+}
+
 class GitHubUserListViewController: UIViewController {
 
     @IBOutlet weak var userListTableView: UITableView!
@@ -36,6 +40,8 @@ class GitHubUserListViewController: UIViewController {
         setupRecheability()
         setupNoInternetBanner()
         
+        usersViewModel.usersList?.removeAll()
+        usersViewModel.setSearch(isSeacrhing: false)
         usersViewModel.getUsers()
         
         //viewmodel binding
@@ -160,6 +166,8 @@ extension GitHubUserListViewController: UITableViewDelegate {
         var userDetailView = GithubUserDetailView()
         userDetailView.userName = userName
         userDetailView.userAvatarURL = usersViewModel.getUserDataSource()?[indexPath.row].getAvatarUrl() ?? ""
+        userDetailView.userNote = usersViewModel.getUserDataSource()?[indexPath.row].getNote() ?? ""
+        userDetailView.delegate = self
         let vc = UIHostingController(rootView: userDetailView)
         self.navigationController?.pushViewController(vc, animated: true)
         
@@ -180,12 +188,11 @@ extension GitHubUserListViewController: UISearchBarDelegate {
 }
 
 extension GitHubUserListViewController: GitHubUserDetailsViewControllerDelegate {
-    func didPopUSerDetailVC(withChange: Bool) {
-        if withChange {
-            self.usersViewModel.getUsers()
-        }
+    func didPopUSerDetailVC(withNote: String, userName: String) {
+            let index = self.usersViewModel.usersList?.firstIndex(where: {$0.getUsername().lowercased() == userName})
+            usersViewModel.usersList?[index!].set(note: withNote)
+        
+        userListTableView.reloadData()
     }
 }
-
-
 

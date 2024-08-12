@@ -92,7 +92,7 @@ class CoreDataClient: GitHubUserCoreDataService {
     
     func getUsers() -> [CoreDataUser] {
         
-        let fetchRequest = NSFetchRequest<CoreDataUser>(entityName: "CoreDataUser")
+        let fetchRequest = CoreDataUser.fetchRequest()
         
         do {
             let users = try mainContext.fetch(fetchRequest)
@@ -145,22 +145,25 @@ class CoreDataClient: GitHubUserCoreDataService {
     }
     
     func saveNote(forUser login: String, note: String) {
-        let fetchRequest = NSFetchRequest<CoreDataUser>(entityName: "CoreDataUser")
-        
-        let predicate = NSPredicate(format: "login = %@", login)
-        fetchRequest.predicate = predicate
-        
-        do {
-            let user = try backgroundContext.fetch(fetchRequest)
-            user.first?.setValue(note, forKey: "note")
-            saveContext()
-        } catch let error {
-            print(error)
+        backgroundContext.perform {
+            let fetchRequest = CoreDataUser.fetchRequest()
+            
+            let predicate = NSPredicate(format: "login = %@", login)
+            fetchRequest.predicate = predicate
+            
+            do {
+                let user = try self.backgroundContext.fetch(fetchRequest)
+                user.first?.setValue(note, forKey: "note")
+                self.saveContext()
+                
+            } catch let error {
+                print(error)
+            }
         }
     }
     
     func getNote(forUser login: String) -> String {
-        let fetchRequest = NSFetchRequest<CoreDataUser>(entityName: "CoreDataUser")
+        let fetchRequest = CoreDataUser.fetchRequest()
         
         let predicate = NSPredicate(format: "login == %@", "\(login)")
         fetchRequest.predicate = predicate

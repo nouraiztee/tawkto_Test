@@ -20,6 +20,7 @@ class UserListViewModel: UserListViewModelInput {
     
     var usersList: [GitHubUserPresentable]? {
         didSet {
+            guard let _ = usersList else { return }
             didFetchUsersList()
         }
     }
@@ -55,7 +56,7 @@ class UserListViewModel: UserListViewModelInput {
                         user.gitHubUser
                     })
                     self.handleSucessResponse(users: users, shouldResetStorage: ((self.usersList?.isEmpty ?? false) || sinceID == 0 ))
-                case .failure(let error):
+                case .failure(_):
                     let users = self.localStorageService.getUsers()
                     if !users.isEmpty {
                         let customUsers = users.map({

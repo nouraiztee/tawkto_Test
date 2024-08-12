@@ -27,7 +27,7 @@ enum APIEndpoint {
     
     static func endpointURL(for endpoint: APIEndpoint) -> URL? {
         switch endpoint {
-        case .getUserDetail(let userName):
+        case .getUserDetail(_):
             let endpointPath = endpoint.path
             if let url = URL(string: baseURL + endpointPath) {
                 return url
@@ -36,7 +36,7 @@ enum APIEndpoint {
             }
         case .getUsersList(let since):
             let endpointPath = endpoint.path
-            var urlComponents = NSURLComponents(string: baseURL + endpointPath)!
+            let urlComponents = NSURLComponents(string: baseURL + endpointPath)!
             urlComponents.queryItems = [URLQueryItem(name: "since", value: "\(since)")]
             return urlComponents.url!
         }

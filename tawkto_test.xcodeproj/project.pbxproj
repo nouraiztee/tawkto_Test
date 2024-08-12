@@ -28,7 +28,6 @@
 		8F8EF9462C621EE1007D4DA2 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */; };
 		8F8EF9472C621EE3007D4DA2 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */; };
 		8F8EF9482C621EE5007D4DA2 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE4E2C5A7B540043613E /* APIServices.swift */; };
-		8F8EF9492C621EE8007D4DA2 /* GitHubUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */; };
 		8F8EF94A2C621EEA007D4DA2 /* GitHubUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CDEA2C593D580043613E /* GitHubUserListViewController.swift */; };
 		8F8EF94B2C621EF0007D4DA2 /* UITableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE442C5A37BF0043613E /* UITableView+RegisterCell.swift */; };
 		8F8EF94C2C621F24007D4DA2 /* CoreDataUserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE5E2C5F9ED40043613E /* CoreDataUserModel.xcdatamodeld */; };
@@ -63,7 +62,6 @@
 		8FE5CE512C5A7BC70043613E /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */; };
 		8FE5CE532C5A7D8F0043613E /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */; };
 		8FE5CE552C5CC5C50043613E /* UITableView+FooterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */; };
-		8FE5CE5A2C5F88160043613E /* GitHubUserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */; };
 		8FE5CE5C2C5F88C80043613E /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE5B2C5F88C80043613E /* UserDetailsViewModel.swift */; };
 		8FE5CE602C5F9ED40043613E /* CoreDataUserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE5E2C5F9ED40043613E /* CoreDataUserModel.xcdatamodeld */; };
 		8FE5CE6E2C5FA3300043613E /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE5CE6D2C5FA3300043613E /* CoreDataService.swift */; };
@@ -129,7 +127,6 @@
 		8FE5CE502C5A7BC70043613E /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		8FE5CE522C5A7D8F0043613E /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FooterLoader.swift"; sourceTree = "<group>"; };
-		8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserDetailsViewController.swift; sourceTree = "<group>"; };
 		8FE5CE5B2C5F88C80043613E /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		8FE5CE5F2C5F9ED40043613E /* CoreDataUserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataUserModel.xcdatamodel; sourceTree = "<group>"; };
 		8FE5CE6D2C5FA3300043613E /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
@@ -174,20 +171,26 @@
 		8F8EF9592C623DD7007D4DA2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				8FDB04A62C6A4A6A00C08A17 /* Reachability */,
 				8F8EF92F2C61FF86007D4DA2 /* ImageLoader.swift */,
-				8FDB04A32C69FC5000C08A17 /* Reachability.h */,
-				8FDB04A22C69FC5000C08A17 /* Reachability.swift */,
 				8FDB049C2C69F2B200C08A17 /* NoInternetBannerView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		8FDB04A62C6A4A6A00C08A17 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8FDB04A22C69FC5000C08A17 /* Reachability.swift */,
+				8FDB04A32C69FC5000C08A17 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		8FE5CDDA2C593D580043613E = {
 			isa = PBXGroup;
 			children = (
-				8F8EF9592C623DD7007D4DA2 /* Helper */,
 				8F8EF94E2C622F72007D4DA2 /* tawkto_test.xctestplan */,
-				8F8EF9322C621965007D4DA2 /* MockResponses */,
 				8FE5CDE52C593D580043613E /* tawkto_test */,
 				8FE5CDFC2C593D5A0043613E /* tawkto_testTests */,
 				8FE5CE062C593D5A0043613E /* tawkto_testUITests */,
@@ -208,6 +211,8 @@
 		8FE5CDE52C593D580043613E /* tawkto_test */ = {
 			isa = PBXGroup;
 			children = (
+				8F8EF9322C621965007D4DA2 /* MockResponses */,
+				8F8EF9592C623DD7007D4DA2 /* Helper */,
 				8FE5CE432C5A37AA0043613E /* Extensions */,
 				8FE5CE1E2C5940760043613E /* CoreData */,
 				8FE5CE1B2C5940140043613E /* Controllers */,
@@ -219,7 +224,6 @@
 				8FE5CDEF2C593D5A0043613E /* Assets.xcassets */,
 				8FE5CDF42C593D5A0043613E /* Info.plist */,
 				8FE5CE542C5CC5C50043613E /* UITableView+FooterLoader.swift */,
-				8FDB049A2C68E8F500C08A17 /* GithubUserDetailView.swift */,
 			);
 			path = tawkto_test;
 			sourceTree = "<group>";
@@ -244,6 +248,7 @@
 		8FE5CE162C593F470043613E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8FDB049A2C68E8F500C08A17 /* GithubUserDetailView.swift */,
 				8FE5CE1F2C5941800043613E /* TableViewCells */,
 				8FE5CE1C2C5940270043613E /* Storyboards */,
 			);
@@ -295,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				8FE5CDEA2C593D580043613E /* GitHubUserListViewController.swift */,
-				8FE5CE592C5F88160043613E /* GitHubUserDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -516,7 +520,6 @@
 				8FE5CE3C2C5A35540043613E /* GitHubUserInvertedTableViewCell.swift in Sources */,
 				8FDB049B2C68E8F500C08A17 /* GithubUserDetailView.swift in Sources */,
 				8FE5CDE92C593D580043613E /* SceneDelegate.swift in Sources */,
-				8FE5CE5A2C5F88160043613E /* GitHubUserDetailsViewController.swift in Sources */,
 				8FE5CE452C5A37BF0043613E /* UITableView+RegisterCell.swift in Sources */,
 				8FE5CE3E2C5A35620043613E /* GitHubUserNoteTableViewCell.swift in Sources */,
 				8FE5CE4F2C5A7B540043613E /* APIServices.swift in Sources */,
@@ -545,7 +548,6 @@
 				8F8EF9312C61FF86007D4DA2 /* ImageLoader.swift in Sources */,
 				8F8EF93A2C621AC4007D4DA2 /* UserPresentableTest.swift in Sources */,
 				8FE5CE7C2C5FA7BC0043613E /* CoreDataUser+CoreDataClass.swift in Sources */,
-				8F8EF9492C621EE8007D4DA2 /* GitHubUserDetailsViewController.swift in Sources */,
 				8F8EF93B2C621E11007D4DA2 /* GitHubUserPresentable.swift in Sources */,
 				8F8EF9462C621EE1007D4DA2 /* NetworkServices.swift in Sources */,
 				8F8EF94B2C621EF0007D4DA2 /* UITableView+RegisterCell.swift in Sources */,

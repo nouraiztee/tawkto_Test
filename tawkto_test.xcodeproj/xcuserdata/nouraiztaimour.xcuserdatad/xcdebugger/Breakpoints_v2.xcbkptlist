@@ -360,87 +360,10 @@
             filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "getSearchedUser(withKeyWord:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CEA294E7-43F3-4EB5-AB4C-10675E754360 - b609138a53c601"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (tawkto_test.GitHubUserPresentable) -&gt; Swift.Bool in tawkto_test.UserListViewModel.getSearchedUser(withKeyWord: Swift.String) -&gt; ()"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/ViewModels/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "CEA294E7-43F3-4EB5-AB4C-10675E754360 - dbeb0c36ec9f3101"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tawkto_test.UserListViewModel.getSearchedUser(withKeyWord: Swift.String) -&gt; ()"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/ViewModels/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "344">
-               </Location>
-               <Location
-                  uuid = "CEA294E7-43F3-4EB5-AB4C-10675E754360 - dbeb0c36ec9f364b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tawkto_test.UserListViewModel.getSearchedUser(withKeyWord: Swift.String) -&gt; ()"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/ViewModels/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "133"
-                  endingLineNumber = "133"
-                  offsetFromSymbolStart = "344">
-               </Location>
-               <Location
-                  uuid = "CEA294E7-43F3-4EB5-AB4C-10675E754360 - 36e79a29d9eeb332"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tawkto_test.UserListViewModel.getSearchedUser(withKeyWord: Swift.String) -&gt; ()"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/ViewModels/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "133"
-                  endingLineNumber = "133"
-                  offsetFromSymbolStart = "344">
-               </Location>
-               <Location
-                  uuid = "CEA294E7-43F3-4EB5-AB4C-10675E754360 - 36e79a29d9eeb0be"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tawkto_test.UserListViewModel.getSearchedUser(withKeyWord: Swift.String) -&gt; ()"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/ViewModels/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "344">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -469,8 +392,8 @@
             filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "getLocalUsers()"
             landmarkType = "7">
             <Locations>
@@ -533,8 +456,8 @@
             filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "handleSucessResponse(users:shouldResetStorage:)"
             landmarkType = "7">
             <Locations>
@@ -581,8 +504,8 @@
             filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "handleSucessResponse(users:shouldResetStorage:)"
             landmarkType = "7">
             <Locations>
@@ -659,8 +582,8 @@
             filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "handleSucessResponse(users:shouldResetStorage:)"
             landmarkType = "7">
             <Locations>
@@ -738,8 +661,8 @@
             filePath = "tawkto_test/Controllers/GitHubUserListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "tableView(_:willDisplay:forRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -754,42 +677,10 @@
             filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "getUsers(sinceID:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6FCB5264-8F3A-40D3-B278-8DB7781192E4 - 2c912920861b33ae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;tawkto_test.GitHubUserAPIModel&gt;, tawkto_test.NetworkError&gt;) -&gt; () in closure #1 @Sendable () -&gt; () in tawkto_test.UserListViewModel.getUsers(sinceID: Swift.Int) -&gt; ()"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/ViewModels/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "716">
-               </Location>
-               <Location
-                  uuid = "6FCB5264-8F3A-40D3-B278-8DB7781192E4 - 2c912920861b33ae"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;tawkto_test.GitHubUserAPIModel&gt;, tawkto_test.NetworkError&gt;) -&gt; () in closure #1 @Sendable () -&gt; () in tawkto_test.UserListViewModel.getUsers(sinceID: Swift.Int) -&gt; ()"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/ViewModels/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "780">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -802,88 +693,10 @@
             filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "handleSucessResponse(users:shouldResetStorage:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "87862CF3-F5D7-47B4-A9EF-CA5D2A6CCDAD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tawkto_test/GithubUserDetailView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "87862CF3-F5D7-47B4-A9EF-CA5D2A6CCDAD - ca1f9385270b33ca"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in tawkto_test.GithubUserDetailView.body.getter : some"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/GithubUserDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "244">
-               </Location>
-               <Location
-                  uuid = "87862CF3-F5D7-47B4-A9EF-CA5D2A6CCDAD - ca1f9385270b3cf1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in tawkto_test.GithubUserDetailView.body.getter : some"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/GithubUserDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "244">
-               </Location>
-               <Location
-                  uuid = "87862CF3-F5D7-47B4-A9EF-CA5D2A6CCDAD - 95fcf88f32c8cfaf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.StringProtocol&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in tawkto_test.GithubUserDetailView.body.getter : some"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/GithubUserDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "252">
-               </Location>
-               <Location
-                  uuid = "87862CF3-F5D7-47B4-A9EF-CA5D2A6CCDAD - 95fcf88f32c8cfcc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.StringProtocol&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in tawkto_test.GithubUserDetailView.body.getter : some"
-                  moduleName = "tawkto_test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/GithubUserDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "252">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -896,8 +709,8 @@
             filePath = "tawkto_test/GithubUserDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -959,8 +772,8 @@
             filePath = "tawkto_test/GithubUserDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1016,14 +829,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "15496939-704F-44DB-B28B-7FCA3F3387F1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tawkto_test/GithubUserDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1051,6 +864,21 @@
                   moduleName = "tawkto_test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nouraiztaimour/Downloads/tawkto_test_Revision/tawkto_test/GithubUserDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "15496939-704F-44DB-B28B-7FCA3F3387F1 - 8f4fe96ce7e828a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #4 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, SwiftUI.Image&gt;, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.StringProtocol&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in tawkto_test.GithubUserDetailView.body.getter : some"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/GithubUserDetailView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "86"
@@ -1112,7 +940,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9260BB26-4903-4A87-BB10-277766D1B980"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tawkto_test/CoreData/CoreDataClient.swift"
@@ -1153,6 +981,21 @@
                   endingLineNumber = "54"
                   offsetFromSymbolStart = "112">
                </Location>
+               <Location
+                  uuid = "9260BB26-4903-4A87-BB10-277766D1B980 - 1692db439ec5db6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in tawkto_test.CoreDataClient.saveContext() -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "112">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1160,7 +1003,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "71A125CB-E921-4D47-A22D-B5970BD7E296"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tawkto_test/CoreData/CoreDataClient.swift"
@@ -1201,6 +1044,21 @@
                   endingLineNumber = "56"
                   offsetFromSymbolStart = "336">
                </Location>
+               <Location
+                  uuid = "71A125CB-E921-4D47-A22D-B5970BD7E296 - 1692db439ec5dbac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in tawkto_test.CoreDataClient.saveContext() -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "336">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1214,10 +1072,200 @@
             filePath = "tawkto_test/CoreData/CoreDataClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "saveNote(forUser:note:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29B654E1-FD0B-487C-888C-280A692B8487 - 5963bdf451a8615a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in tawkto_test.CoreDataClient.saveNote(forUser: Swift.String, note: Swift.String) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "29B654E1-FD0B-487C-888C-280A692B8487 - 5963bdf451a8615a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in tawkto_test.CoreDataClient.saveNote(forUser: Swift.String, note: Swift.String) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "29B654E1-FD0B-487C-888C-280A692B8487 - 5963bdf451a8615a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in tawkto_test.CoreDataClient.saveNote(forUser: Swift.String, note: Swift.String) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06819760-8513-48D8-BD02-0F38F3A64F79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tawkto_test/CoreData/CoreDataClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "saveNote(forUser:note:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "06819760-8513-48D8-BD02-0F38F3A64F79 - 96456577cdf0fc0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tawkto_test.CoreDataClient.saveNote(forUser: Swift.String, note: Swift.String) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "06819760-8513-48D8-BD02-0F38F3A64F79 - 5963bdf451a86135"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in tawkto_test.CoreDataClient.saveNote(forUser: Swift.String, note: Swift.String) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "06819760-8513-48D8-BD02-0F38F3A64F79 - 5963bdf451a86135"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in tawkto_test.CoreDataClient.saveNote(forUser: Swift.String, note: Swift.String) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/CoreData/CoreDataClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E65724E-3137-4D19-89A4-12F814F0F1AE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tawkto_test/CoreData/CoreDataClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "CoreDataClient"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B035C5BA-FA0D-4065-958C-D083BDC84F6B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tawkto_test/Controllers/GitHubUserListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B035C5BA-FA0D-4065-958C-D083BDC84F6B - 21676e188f7ca5f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tawkto_test.GitHubUserListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Controllers/GitHubUserListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+               <Location
+                  uuid = "B035C5BA-FA0D-4065-958C-D083BDC84F6B - 21676e188f7ca5f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tawkto_test.GitHubUserListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "tawkto_test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nouraiztaimour/Desktop/tawkto_test/tawkto_test/Controllers/GitHubUserListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F098038B-2831-4186-B192-68FA74C74CD0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tawkto_test/ViewModels/UserListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "usersList"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
